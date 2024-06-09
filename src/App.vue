@@ -20,9 +20,9 @@ import { getVersion, setVersion } from '@/utils/storage'
 
 const VERSION_INFO = `<div class="mm-dialog-text text-left">
 版本号：${VERSION}（${process.env.VUE_APP_UPDATE_TIME}）<br/>
-1、 采用新版图标<br>
-2、 修复音乐搜索<br>
-3、 优化滚动条样式
+1、 使用新版网页<br>
+2、 优化许多bug<br>
+3、 使用别人源码搭建
 </div>`
 
 export default {
@@ -49,7 +49,7 @@ export default {
         document.title = '死鬼去哪里了！'
         clearTimeout(titleTime)
       } else {
-        document.title = '(つェ⊂)咦!又好了!'
+        document.title = '(つェ⊂)咦!又回来了!'
         titleTime = setTimeout(function () {
           document.title = OriginTitile
         }, 2000)
